@@ -1,0 +1,47 @@
+/* services.css */
+
+#clinic-services {
+  /* Using the soft gray background to separate from the white Conditions section */
+  background-color: var(--color-bg-alt); 
+  font-family: var(--font-primary);
+}
+
+/* Header Typography */
+#clinic-services .services-subtitle { color: var(--color-primary); }
+#clinic-services .services-title { color: var(--color-text-heading); }
+#clinic-services .services-description { color: var(--color-text-body); }
+
+/* Card Styling */
+#clinic-services .service-card {
+  background-color: var(--color-bg-base);
+  border-color: var(--color-border-light);
+  
+  /* Initial state for the scroll-triggered fade-in animation */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out, box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+#clinic-services .service-name { color: var(--color-text-heading); }
+#clinic-services .service-text { color: var(--color-text-body); }
+
+/* Premium Image Hover Interaction */
+#clinic-services .service-img {
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#clinic-services .service-card:hover {
+  border-color: var(--color-primary-focus);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+  transform: translateY(-4px);
+}
+
+#clinic-services .service-card:hover .service-img {
+  transform: scale(1.08);
+}
+
+/* Animation trigger class applied by JavaScript */
+#clinic-services .service-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

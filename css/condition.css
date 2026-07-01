@@ -1,0 +1,49 @@
+/* conditions.css */
+
+#clinic-conditions {
+  background-color: var(--color-bg-base); 
+  font-family: var(--font-primary);
+}
+
+/* Typography */
+#clinic-conditions .conditions-subtitle { color: var(--color-primary); }
+#clinic-conditions .conditions-title { color: var(--color-text-heading); }
+#clinic-conditions .conditions-description { color: var(--color-text-body); }
+
+/* Card Styling */
+#clinic-conditions .condition-card {
+  background-color: var(--color-bg-base);
+  border-color: var(--color-border-light);
+  color: var(--color-text-heading);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  
+  /* Initial state for scroll animation */
+  opacity: 0;
+  transform: translateY(15px);
+}
+
+/* Hover States */
+#clinic-conditions .condition-card:hover {
+  border-color: var(--color-primary-focus);
+  box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.1), 0 2px 4px -1px rgba(37, 99, 235, 0.06);
+  transform: translateY(-2px);
+  color: var(--color-primary);
+}
+
+/* Arrow Micro-Interaction */
+#clinic-conditions .condition-arrow {
+  color: var(--color-text-muted);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#clinic-conditions .condition-card:hover .condition-arrow {
+  color: var(--color-primary);
+  transform: translateX(4px);
+}
+
+/* Animation triggers class */
+#clinic-conditions .condition-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

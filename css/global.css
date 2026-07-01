@@ -1,0 +1,28 @@
+/* global.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* Typography */
+  --font-primary: 'Poppins', sans-serif;
+  
+  /* Brand Colors */
+  --color-primary: #2563eb;       
+  --color-primary-hover: #1d4ed8;
+  --color-primary-focus: rgba(147, 197, 253, 0.5);
+  
+  /* Text Colors */
+  --color-text-heading: #111827;  
+  --color-text-body: #4b5563;     
+  --color-text-muted: #6b7280;
+  
+  /* Backgrounds & Borders */
+  --color-bg-base: #ffffff;
+  --color-bg-alt: #f9fafb;
+  --color-border-light: #f3f4f6; /* Neutral gray, no blue lines */
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-bg-base);
+  color: var(--color-text-body);
+}

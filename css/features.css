@@ -1,0 +1,47 @@
+/* features.css */
+
+#clinic-features {
+  /* Alternating background color */
+  background-color: var(--color-bg-alt); 
+  font-family: var(--font-primary);
+}
+
+/* Typography */
+#clinic-features .features-subtitle { color: var(--color-primary); }
+#clinic-features .features-title { color: var(--color-text-heading); }
+#clinic-features .features-description { color: var(--color-text-body); }
+
+/* Card Initial State */
+#clinic-features .feature-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out, box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+#clinic-features .feature-title { color: var(--color-text-heading); }
+#clinic-features .feature-text { color: var(--color-text-body); }
+
+/* Icon Styling */
+#clinic-features .feature-icon-wrapper {
+  background-color: rgba(37, 99, 235, 0.08); /* Faint blue tint */
+  color: var(--color-primary);
+  transition: background-color 0.4s ease, color 0.4s ease, transform 0.4s ease;
+}
+
+/* Hover Interactions */
+#clinic-features .feature-card:hover {
+  border-color: var(--color-primary-focus);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+  transform: translateY(-4px);
+}
+
+#clinic-features .feature-card:hover .feature-icon-wrapper {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
+/* Animation Trigger Class */
+#clinic-features .feature-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

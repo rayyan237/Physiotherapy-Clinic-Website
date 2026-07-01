@@ -1,0 +1,56 @@
+/* hero.css 
+  Scoped specifically to the #clinic-hero wrapper 
+*/
+
+#clinic-hero {
+  background-color: var(--color-bg-base);
+}
+
+/* Typography Colors */
+#clinic-hero .hero-subtitle { color: var(--color-primary); }
+#clinic-hero .hero-title { color: var(--color-text-heading); }
+#clinic-hero .hero-highlight { color: var(--color-primary); }
+#clinic-hero .hero-description { color: var(--color-text-body); }
+
+/* Primary CTA Button */
+#clinic-hero .btn-primary {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+#clinic-hero .btn-primary:hover,
+#clinic-hero .btn-primary:focus {
+  background-color: var(--color-primary-hover);
+  outline: none;
+  box-shadow: 0 0 0 4px var(--color-primary-focus);
+  transform: translateY(-2px);
+}
+
+/* WhatsApp CTA Button */
+#clinic-hero .btn-whatsapp {
+  background-color: var(--color-whatsapp, #22c55e);
+  color: #ffffff;
+}
+#clinic-hero .btn-whatsapp:hover,
+#clinic-hero .btn-whatsapp:focus {
+  background-color: var(--color-whatsapp-hover, #16a34a);
+  outline: none;
+  box-shadow: 0 0 0 4px var(--color-whatsapp-focus, rgba(134, 239, 172, 0.5));
+  transform: translateY(-2px);
+}
+
+/* Visual Assets Animation */
+#clinic-hero .hero-visual img {
+  opacity: 0;
+  animation: heroFadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes heroFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

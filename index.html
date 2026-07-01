@@ -1,0 +1,1845 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Your Clinic Name | Professional Physiotherapy Treatments</title>
+    <meta
+      name="description"
+      content="Professional physiotherapy treatments for back pain, sports injuries, stroke rehabilitation, and more."
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/trust.css" />
+    <link rel="stylesheet" href="css/condition.css" />
+    <link rel="stylesheet" href="css/services.css" />
+    <link rel="stylesheet" href="css/team.css" />
+    <link rel="stylesheet" href="css/features.css" />
+    <link rel="stylesheet" href="css/process.css" />
+  </head>
+  <body class="antialiased selection:bg-blue-100 selection:text-blue-900">
+    <header
+      id="clinic-navbar"
+      data-component="navbar"
+      class="fixed w-full top-0 z-50 backdrop-blur-md transition-all duration-300"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <div class="flex-shrink-0 flex items-center">
+            <a
+              href="/"
+              class="nav-brand font-bold tracking-tight text-2xl"
+              aria-label="Clinic Name Home"
+            >
+              [Logo/Clinic Name]
+            </a>
+          </div>
+
+          <nav
+            class="hidden lg:flex space-x-8 items-center"
+            aria-label="Main Navigation"
+          >
+            <a href="/" class="nav-link font-medium transition-colors">Home</a>
+            <a href="#about" class="nav-link font-medium transition-colors"
+              >About</a
+            >
+            <a href="#services" class="nav-link font-medium transition-colors"
+              >Services</a
+            >
+            <a href="#conditions" class="nav-link font-medium transition-colors"
+              >Conditions</a
+            >
+            <a href="#gallery" class="nav-link font-medium transition-colors"
+              >Gallery</a
+            >
+            <a href="#blog" class="nav-link font-medium transition-colors"
+              >Blog</a
+            >
+            <a href="#contact" class="nav-link font-medium transition-colors"
+              >Contact</a
+            >
+          </nav>
+
+          <div class="hidden lg:flex items-center">
+            <a
+              href="#book-appointment"
+              class="nav-cta inline-flex justify-center items-center px-6 py-2.5 rounded-lg font-semibold transition-colors shadow-sm"
+            >
+              Book Appointment
+            </a>
+          </div>
+
+          <div class="flex items-center lg:hidden">
+            <button
+              type="button"
+              id="mobile-menu-btn"
+              class="inline-flex items-center justify-center p-2 rounded-md transition-colors focus:outline-none"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="block h-6 w-6"
+                id="nav-icon-menu"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+              <svg
+                class="hidden h-6 w-6"
+                id="nav-icon-close"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:hidden hidden absolute w-full shadow-lg" id="mobile-menu">
+        <nav class="px-4 pt-2 pb-6 space-y-1" aria-label="Mobile Navigation">
+          <a
+            href="/"
+            class="mobile-link block px-3 py-3 rounded-md text-base font-medium active"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="mobile-link block px-3 py-3 rounded-md text-base font-medium"
+            >About</a
+          >
+          <a
+            href="#services"
+            class="mobile-link block px-3 py-3 rounded-md text-base font-medium"
+            >Services</a
+          >
+          <a
+            href="#conditions"
+            class="mobile-link block px-3 py-3 rounded-md text-base font-medium"
+            >Conditions</a
+          >
+          <a
+            href="#gallery"
+            class="mobile-link block px-3 py-3 rounded-md text-base font-medium"
+            >Gallery</a
+          >
+          <a
+            href="#blog"
+            class="mobile-link block px-3 py-3 rounded-md text-base font-medium"
+            >Blog</a
+          >
+          <a
+            href="#contact"
+            class="mobile-link block px-3 py-3 rounded-md text-base font-medium"
+            >Contact</a
+          >
+          <a
+            href="#book-appointment"
+            class="mobile-cta block mt-4 text-center px-4 py-3 rounded-lg font-semibold w-full"
+          >
+            Book Appointment
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="pt-20">
+      <!-- START HERO -->
+      <section
+        id="clinic-hero"
+        data-component="hero"
+        class="relative overflow-hidden pt-16 pb-12 lg:pt-24 lg:pb-20"
+        aria-labelledby="hero-heading"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col lg:flex-row items-center gap-12">
+            <div
+              class="w-full lg:w-1/2 flex flex-col justify-center text-center lg:text-left"
+            >
+              <span
+                class="hero-subtitle font-bold tracking-wide uppercase text-sm md:text-base mb-3"
+              >
+                [Your Clinic Name] Physiotherapy
+              </span>
+
+              <h1
+                id="hero-heading"
+                class="hero-title text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6"
+              >
+                Recover Faster.
+                <span class="hero-highlight">Move Better.</span> Live Pain-Free.
+              </h1>
+
+              <p
+                class="hero-description text-lg md:text-xl mb-8 max-w-2xl mx-auto lg:mx-0"
+              >
+                Professional physiotherapy treatments for back pain, sports
+                injuries, neck pain, stroke rehabilitation, and more.
+              </p>
+
+              <div
+                class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start"
+              >
+                <a
+                  href="#book-appointment"
+                  aria-label="Book a physiotherapy appointment"
+                  class="btn-primary w-full sm:w-auto inline-flex justify-center items-center px-8 py-3.5 rounded-lg font-semibold transition-all duration-200 shadow-md"
+                >
+                  Book Appointment
+                </a>
+
+                <a
+                  href="https://wa.me/923000000000"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Contact us on WhatsApp"
+                  class="btn-whatsapp w-full sm:w-auto inline-flex justify-center items-center px-8 py-3.5 rounded-lg font-semibold transition-all duration-200 shadow-md"
+                >
+                  <svg
+                    class="w-5 h-5 mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                    />
+                  </svg>
+                  WhatsApp Us
+                </a>
+              </div>
+            </div>
+
+            <div class="hero-visual w-full lg:w-1/2 mt-8 lg:mt-0 relative">
+              <img
+                src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=800&auto=format&fit=crop"
+                alt="Professional physiotherapist assisting a patient with mobility exercises"
+                width="800"
+                height="600"
+                fetchpriority="high"
+                decoding="sync"
+                class="rounded-2xl shadow-xl object-cover w-full h-auto aspect-[4/3]"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END HERO -->
+
+      <!-- START TRUST -->
+      <section
+        id="clinic-trust"
+        data-component="trust"
+        class="py-16 lg:py-24 overflow-hidden"
+        aria-labelledby="trust-heading"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+            <div
+              class="trust-content w-full lg:w-1/2 flex flex-col justify-center text-center lg:text-left"
+            >
+              <span
+                class="trust-subtitle font-bold tracking-wide uppercase text-sm md:text-base mb-3 block"
+              >
+                Why Choose Us
+              </span>
+
+              <h2
+                id="trust-heading"
+                class="trust-title text-3xl md:text-4xl font-extrabold leading-tight mb-6"
+              >
+                Dedicated to Your <br class="hidden lg:block" />
+                <span class="trust-highlight">Complete Recovery</span>
+              </h2>
+
+              <p
+                class="trust-description text-lg mb-8 max-w-2xl mx-auto lg:mx-0"
+              >
+                We combine expert medical knowledge with compassionate care. Our
+                goal isn't just to treat your symptoms, but to uncover the root
+                cause of your pain so you can return to the activities you love,
+                stronger than before.
+              </p>
+
+              <div
+                class="trust-metric inline-flex items-center justify-center lg:justify-start gap-4 p-4 rounded-2xl shadow-sm border"
+              >
+                <div class="metric-number text-3xl font-extrabold">5k+</div>
+                <div
+                  class="metric-text text-sm font-medium leading-tight text-left"
+                >
+                  Successful Patient <br />
+                  Recoveries
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full lg:w-1/2">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-6">
+                <article
+                  class="trust-card flex flex-col p-6 rounded-2xl shadow-sm"
+                  style="transition-delay: 100ms"
+                >
+                  <div
+                    class="trust-icon-wrapper w-12 h-12 flex items-center justify-center rounded-xl mb-4"
+                  >
+                    <svg
+                      class="trust-icon w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="trust-card-title font-bold text-lg mb-2">
+                    Licensed Experts
+                  </h3>
+                  <p class="trust-card-text text-sm leading-relaxed">
+                    Highly trained, certified professionals dedicated to your
+                    health.
+                  </p>
+                </article>
+
+                <article
+                  class="trust-card flex flex-col p-6 rounded-2xl shadow-sm"
+                  style="transition-delay: 200ms"
+                >
+                  <div
+                    class="trust-icon-wrapper w-12 h-12 flex items-center justify-center rounded-xl mb-4"
+                  >
+                    <svg
+                      class="trust-icon w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="trust-card-title font-bold text-lg mb-2">
+                    Evidence-Based
+                  </h3>
+                  <p class="trust-card-text text-sm leading-relaxed">
+                    Modern therapies grounded in the latest scientific research.
+                  </p>
+                </article>
+
+                <article
+                  class="trust-card flex flex-col p-6 rounded-2xl shadow-sm"
+                  style="transition-delay: 300ms"
+                >
+                  <div
+                    class="trust-icon-wrapper w-12 h-12 flex items-center justify-center rounded-xl mb-4"
+                  >
+                    <svg
+                      class="trust-icon w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="trust-card-title font-bold text-lg mb-2">
+                    Personalized Plans
+                  </h3>
+                  <p class="trust-card-text text-sm leading-relaxed">
+                    Recovery protocols designed specifically for your unique
+                    body.
+                  </p>
+                </article>
+
+                <article
+                  class="trust-card flex flex-col p-6 rounded-2xl shadow-sm"
+                  style="transition-delay: 400ms"
+                >
+                  <div
+                    class="trust-icon-wrapper w-12 h-12 flex items-center justify-center rounded-xl mb-4"
+                  >
+                    <svg
+                      class="trust-icon w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M13 10V3L4 14h7v7l9-11h-7z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 class="trust-card-title font-bold text-lg mb-2">
+                    Modern Equipment
+                  </h3>
+                  <p class="trust-card-text text-sm leading-relaxed">
+                    State-of-the-art clinical tools to accelerate your healing.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END TRUST -->
+
+      <!-- CONDITIONS COMPONENT START -->
+      <section
+        id="clinic-conditions"
+        data-component="conditions"
+        class="py-16 lg:py-24"
+        aria-labelledby="conditions-heading"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Section Header -->
+          <div class="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
+            <span
+              class="conditions-subtitle font-bold tracking-wide uppercase text-sm md:text-base mb-3 block"
+            >
+              Where Does It Hurt?
+            </span>
+            <h2
+              id="conditions-heading"
+              class="conditions-title text-3xl md:text-4xl font-extrabold leading-tight mb-4"
+            >
+              Conditions We Treat
+            </h2>
+            <p class="conditions-description text-lg max-w-2xl mx-auto">
+              Select your specific pain point below to learn more about our
+              targeted, evidence-based treatment protocols.
+            </p>
+          </div>
+
+          <!-- Semantic List for SEO, styled as a responsive grid -->
+          <ul
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5"
+          >
+            <!-- Condition: Back Pain -->
+            <li class="condition-item">
+              <a
+                href="condition.html?id=back-pain"
+                class="condition-card flex items-center justify-between p-5 rounded-xl shadow-sm border"
+              >
+                <span class="condition-name font-semibold text-base"
+                  >Back Pain</span
+                >
+                <svg
+                  class="condition-arrow w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <!-- Condition: Neck Pain -->
+            <li class="condition-item">
+              <a
+                href="condition.html?id=neck-pain"
+                class="condition-card flex items-center justify-between p-5 rounded-xl shadow-sm border"
+              >
+                <span class="condition-name font-semibold text-base"
+                  >Neck Pain</span
+                >
+                <svg
+                  class="condition-arrow w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <!-- Condition: Knee Pain -->
+            <li class="condition-item">
+              <a
+                href="condition.html?id=knee-pain"
+                class="condition-card flex items-center justify-between p-5 rounded-xl shadow-sm border"
+              >
+                <span class="condition-name font-semibold text-base"
+                  >Knee Pain</span
+                >
+                <svg
+                  class="condition-arrow w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <!-- Condition: Shoulder Pain -->
+            <li class="condition-item">
+              <a
+                href="condition.html?id=shoulder-pain"
+                class="condition-card flex items-center justify-between p-5 rounded-xl shadow-sm border"
+              >
+                <span class="condition-name font-semibold text-base"
+                  >Shoulder Pain</span
+                >
+                <svg
+                  class="condition-arrow w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <!-- Condition: Sciatica -->
+            <li class="condition-item">
+              <a
+                href="condition.html?id=sciatica"
+                class="condition-card flex items-center justify-between p-5 rounded-xl shadow-sm border"
+              >
+                <span class="condition-name font-semibold text-base"
+                  >Sciatica</span
+                >
+                <svg
+                  class="condition-arrow w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <!-- Condition: Frozen Shoulder -->
+            <li class="condition-item">
+              <a
+                href="condition.html?id=frozen-shoulder"
+                class="condition-card flex items-center justify-between p-5 rounded-xl shadow-sm border"
+              >
+                <span class="condition-name font-semibold text-base"
+                  >Frozen Shoulder</span
+                >
+                <svg
+                  class="condition-arrow w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <!-- Condition: Arthritis -->
+            <li class="condition-item">
+              <a
+                href="condition.html?id=arthritis"
+                class="condition-card flex items-center justify-between p-5 rounded-xl shadow-sm border"
+              >
+                <span class="condition-name font-semibold text-base"
+                  >Arthritis</span
+                >
+                <svg
+                  class="condition-arrow w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <!-- Condition: Sports Injuries -->
+            <li class="condition-item">
+              <a
+                href="condition.html?id=sports-injuries"
+                class="condition-card flex items-center justify-between p-5 rounded-xl shadow-sm border"
+              >
+                <span class="condition-name font-semibold text-base"
+                  >Sports Injuries</span
+                >
+                <svg
+                  class="condition-arrow w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <!-- Condition: Post-Surgery Rehabilitation -->
+            <li class="condition-item">
+              <a
+                href="condition.html?id=post-surgery-rehabilitation"
+                class="condition-card flex items-center justify-between p-5 rounded-xl shadow-sm border"
+              >
+                <span class="condition-name font-semibold text-base"
+                  >Post-Surgery Rehab</span
+                >
+                <svg
+                  class="condition-arrow w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <!-- Condition: Stroke Rehabilitation -->
+            <li class="condition-item">
+              <a
+                href="condition.html?id=stroke-rehabilitation"
+                class="condition-card flex items-center justify-between p-5 rounded-xl shadow-sm border"
+              >
+                <span class="condition-name font-semibold text-base"
+                  >Stroke Rehab</span
+                >
+                <svg
+                  class="condition-arrow w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <!-- Condition: Cervical Pain -->
+            <li class="condition-item">
+              <a
+                href="condition.html?id=cervical-pain"
+                class="condition-card flex items-center justify-between p-5 rounded-xl shadow-sm border"
+              >
+                <span class="condition-name font-semibold text-base"
+                  >Cervical Pain</span
+                >
+                <svg
+                  class="condition-arrow w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <!-- Condition: Slip Disc -->
+            <li class="condition-item">
+              <a
+                href="condition.html?id=slip-disc"
+                class="condition-card flex items-center justify-between p-5 rounded-xl shadow-sm border"
+              >
+                <span class="condition-name font-semibold text-base"
+                  >Slip Disc</span
+                >
+                <svg
+                  class="condition-arrow w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <!-- Condition: Tennis Elbow -->
+            <li class="condition-item">
+              <a
+                href="condition.html?id=tennis-elbow"
+                class="condition-card flex items-center justify-between p-5 rounded-xl shadow-sm border"
+              >
+                <span class="condition-name font-semibold text-base"
+                  >Tennis Elbow</span
+                >
+                <svg
+                  class="condition-arrow w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <!-- Condition: Plantar Fasciitis -->
+            <li class="condition-item">
+              <a
+                href="condition.html?id=plantar-fasciitis"
+                class="condition-card flex items-center justify-between p-5 rounded-xl shadow-sm border"
+              >
+                <span class="condition-name font-semibold text-base"
+                  >Plantar Fasciitis</span
+                >
+                <svg
+                  class="condition-arrow w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- CONDITIONS COMPONENT END -->
+
+      <!-- SERVICES COMPONENT START -->
+      <section
+        id="clinic-services"
+        data-component="services"
+        class="py-16 lg:py-24"
+        aria-labelledby="services-heading"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Section Header -->
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <span
+              class="services-subtitle font-bold tracking-wide uppercase text-sm md:text-base mb-3 block"
+            >
+              Our Expertise
+            </span>
+            <h2
+              id="services-heading"
+              class="services-title text-3xl md:text-4xl font-extrabold leading-tight mb-4"
+            >
+              Specialized Clinical Services
+            </h2>
+            <p class="services-description text-lg max-w-2xl mx-auto">
+              We utilize a multidisciplinary approach, combining advanced manual
+              techniques with cutting-edge modalities to accelerate your healing
+              process.
+            </p>
+          </div>
+
+          <!-- Semantic List Grid: 1 col (mobile), 2 cols (tablet), 3 cols (desktop) -->
+          <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- 1. Manual Therapy -->
+            <li
+              class="service-card flex flex-col rounded-2xl shadow-sm border overflow-hidden group"
+            >
+              <div
+                class="relative w-full aspect-[4/3] overflow-hidden bg-gray-100"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop"
+                  alt="Physiotherapist performing manual therapy on a patient's back"
+                  loading="lazy"
+                  decoding="async"
+                  class="service-img w-full h-full object-cover"
+                />
+              </div>
+              <div class="p-6 lg:p-8 flex flex-col flex-grow">
+                <h3 class="service-name text-xl font-bold mb-3">
+                  Manual Therapy
+                </h3>
+                <p class="service-text text-base leading-relaxed">
+                  Hands-on joint mobilization and soft tissue manipulation to
+                  reduce tension, break up scar tissue, and instantly improve
+                  range of motion.
+                </p>
+              </div>
+            </li>
+
+            <!-- 2. Dry Needling -->
+            <li
+              class="service-card flex flex-col rounded-2xl shadow-sm border overflow-hidden group"
+              style="transition-delay: 50ms"
+            >
+              <div
+                class="relative w-full aspect-[4/3] overflow-hidden bg-gray-100"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=800&auto=format&fit=crop"
+                  alt="Close up of dry needling acupuncture therapy"
+                  loading="lazy"
+                  decoding="async"
+                  class="service-img w-full h-full object-cover"
+                />
+              </div>
+              <div class="p-6 lg:p-8 flex flex-col flex-grow">
+                <h3 class="service-name text-xl font-bold mb-3">
+                  Dry Needling
+                </h3>
+                <p class="service-text text-base leading-relaxed">
+                  Precision insertion of ultra-fine needles to release muscular
+                  trigger points, alleviate deep spasms, and reset neuromuscular
+                  firing patterns.
+                </p>
+              </div>
+            </li>
+
+            <!-- 3. Cupping Therapy -->
+            <li
+              class="service-card flex flex-col rounded-2xl shadow-sm border overflow-hidden group"
+              style="transition-delay: 100ms"
+            >
+              <div
+                class="relative w-full aspect-[4/3] overflow-hidden bg-gray-100"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1620916297397-a4a5402a3c6c?q=80&w=800&auto=format&fit=crop"
+                  alt="Patient receiving cupping therapy on their back"
+                  loading="lazy"
+                  decoding="async"
+                  class="service-img w-full h-full object-cover"
+                />
+              </div>
+              <div class="p-6 lg:p-8 flex flex-col flex-grow">
+                <h3 class="service-name text-xl font-bold mb-3">
+                  Cupping Therapy
+                </h3>
+                <p class="service-text text-base leading-relaxed">
+                  Myofascial decompression utilizing suction to lift tissue,
+                  drastically enhance localized blood flow, and flush out
+                  stagnant cellular toxins.
+                </p>
+              </div>
+            </li>
+
+            <!-- 4. Electrotherapy -->
+            <li
+              class="service-card flex flex-col rounded-2xl shadow-sm border overflow-hidden group"
+              style="transition-delay: 150ms"
+            >
+              <div
+                class="relative w-full aspect-[4/3] overflow-hidden bg-gray-100"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=800&auto=format&fit=crop"
+                  alt="Electrotherapy TENS machine applied to a patient"
+                  loading="lazy"
+                  decoding="async"
+                  class="service-img w-full h-full object-cover"
+                />
+              </div>
+              <div class="p-6 lg:p-8 flex flex-col flex-grow">
+                <h3 class="service-name text-xl font-bold mb-3">
+                  Electrotherapy
+                </h3>
+                <p class="service-text text-base leading-relaxed">
+                  Advanced modalities including TENS, EMS, and therapeutic
+                  ultrasound to actively block pain signals, stimulate muscles,
+                  and reduce severe inflammation.
+                </p>
+              </div>
+            </li>
+
+            <!-- 5. Exercise Therapy -->
+            <li
+              class="service-card flex flex-col rounded-2xl shadow-sm border overflow-hidden group"
+              style="transition-delay: 200ms"
+            >
+              <div
+                class="relative w-full aspect-[4/3] overflow-hidden bg-gray-100"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=800&auto=format&fit=crop"
+                  alt="Patient performing supervised exercise therapy with resistance bands"
+                  loading="lazy"
+                  decoding="async"
+                  class="service-img w-full h-full object-cover"
+                />
+              </div>
+              <div class="p-6 lg:p-8 flex flex-col flex-grow">
+                <h3 class="service-name text-xl font-bold mb-3">
+                  Exercise Therapy
+                </h3>
+                <p class="service-text text-base leading-relaxed">
+                  Highly customized strengthening and stretching protocols
+                  prescribed to correct muscular imbalances and build long-term
+                  biomechanical resilience.
+                </p>
+              </div>
+            </li>
+
+            <!-- 6. Sports Rehabilitation -->
+            <li
+              class="service-card flex flex-col rounded-2xl shadow-sm border overflow-hidden group"
+              style="transition-delay: 250ms"
+            >
+              <div
+                class="relative w-full aspect-[4/3] overflow-hidden bg-gray-100"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop"
+                  alt="Athlete stretching during sports rehabilitation"
+                  loading="lazy"
+                  decoding="async"
+                  class="service-img w-full h-full object-cover"
+                />
+              </div>
+              <div class="p-6 lg:p-8 flex flex-col flex-grow">
+                <h3 class="service-name text-xl font-bold mb-3">
+                  Sports Rehabilitation
+                </h3>
+                <p class="service-text text-base leading-relaxed">
+                  Aggressive, sport-specific recovery programs focusing on
+                  agility, proprioception, and explosive power to return
+                  athletes safely to peak performance.
+                </p>
+              </div>
+            </li>
+
+            <!-- 7. Posture Correction -->
+            <li
+              class="service-card flex flex-col rounded-2xl shadow-sm border overflow-hidden group"
+              style="transition-delay: 300ms"
+            >
+              <div
+                class="relative w-full aspect-[4/3] overflow-hidden bg-gray-100"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1588286840104-8957b019727f?q=80&w=800&auto=format&fit=crop"
+                  alt="Therapist adjusting patient's spinal posture"
+                  loading="lazy"
+                  decoding="async"
+                  class="service-img w-full h-full object-cover"
+                />
+              </div>
+              <div class="p-6 lg:p-8 flex flex-col flex-grow">
+                <h3 class="service-name text-xl font-bold mb-3">
+                  Posture Correction
+                </h3>
+                <p class="service-text text-base leading-relaxed">
+                  Comprehensive ergonomic assessments and targeted core
+                  retraining to eliminate modern tech-neck, forward shoulder
+                  rounding, and chronic spinal strain.
+                </p>
+              </div>
+            </li>
+
+            <!-- 8. Home Physiotherapy -->
+            <li
+              class="service-card flex flex-col rounded-2xl shadow-sm border overflow-hidden group"
+              style="transition-delay: 350ms"
+            >
+              <div
+                class="relative w-full aspect-[4/3] overflow-hidden bg-gray-100"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=800&auto=format&fit=crop"
+                  alt="Physiotherapist treating an elderly patient in their home"
+                  loading="lazy"
+                  decoding="async"
+                  class="service-img w-full h-full object-cover"
+                />
+              </div>
+              <div class="p-6 lg:p-8 flex flex-col flex-grow">
+                <h3 class="service-name text-xl font-bold mb-3">
+                  Home Physiotherapy
+                </h3>
+                <p class="service-text text-base leading-relaxed">
+                  Expert clinical care delivered directly to your door. Ideal
+                  for post-operative patients, the elderly, or anyone with
+                  severely restricted mobility.
+                </p>
+              </div>
+            </li>
+
+            <!-- 9. Orthopedic Rehabilitation -->
+            <li
+              class="service-card flex flex-col rounded-2xl shadow-sm border overflow-hidden group"
+              style="transition-delay: 400ms"
+            >
+              <div
+                class="relative w-full aspect-[4/3] overflow-hidden bg-gray-100"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?q=80&w=800&auto=format&fit=crop"
+                  alt="Patient rehabilitating their knee post-surgery"
+                  loading="lazy"
+                  decoding="async"
+                  class="service-img w-full h-full object-cover"
+                />
+              </div>
+              <div class="p-6 lg:p-8 flex flex-col flex-grow">
+                <h3 class="service-name text-xl font-bold mb-3">
+                  Orthopedic Rehab
+                </h3>
+                <p class="service-text text-base leading-relaxed">
+                  Structured clinical protocols for recovering from joint
+                  replacements, complex fractures, and severe tendon repairs,
+                  minimizing scar tissue formation.
+                </p>
+              </div>
+            </li>
+
+            <!-- 10. Neurological Rehabilitation (Centered on desktop to balance the 10-item grid) -->
+            <li
+              class="service-card flex flex-col rounded-2xl shadow-sm border overflow-hidden group lg:col-start-2"
+              style="transition-delay: 450ms"
+            >
+              <div
+                class="relative w-full aspect-[4/3] overflow-hidden bg-gray-100"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1576091160550-2173ff9e5ee5?q=80&w=800&auto=format&fit=crop"
+                  alt="Therapist assisting a patient with neurological walking therapy"
+                  loading="lazy"
+                  decoding="async"
+                  class="service-img w-full h-full object-cover"
+                />
+              </div>
+              <div class="p-6 lg:p-8 flex flex-col flex-grow">
+                <h3 class="service-name text-xl font-bold mb-3">
+                  Neurological Rehab
+                </h3>
+                <p class="service-text text-base leading-relaxed">
+                  Dedicated neuro-plasticity training to help patients regain
+                  motor control, balance, and independence following a stroke or
+                  nerve injury.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- SERVICES COMPONENT END -->
+
+      <!-- TEAM COMPONENT START -->
+      <section
+        id="clinic-team"
+        data-component="team"
+        class="py-16 lg:py-24"
+        aria-labelledby="team-heading"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Section Header -->
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <span
+              class="team-subtitle font-bold tracking-wide uppercase text-sm md:text-base mb-3 block"
+            >
+              Meet Our Experts
+            </span>
+            <h2
+              id="team-heading"
+              class="team-title text-3xl md:text-4xl font-extrabold leading-tight mb-4"
+            >
+              Your Dedicated Recovery Team
+            </h2>
+            <p class="team-description text-lg max-w-2xl mx-auto">
+              Our clinic is home to highly qualified, certified professionals
+              who collaborate to design the most effective, evidence-based
+              treatment plans for your specific needs.
+            </p>
+          </div>
+
+          <!-- Scalable Team Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- ==========================================
+           TEAM MEMBER CARD 1
+           ========================================== -->
+            <article
+              class="team-card flex flex-col bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group"
+            >
+              <!-- Photo Container -->
+              <div
+                class="relative w-full aspect-[4/5] bg-gray-100 overflow-hidden"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=600&auto=format&fit=crop"
+                  alt="Dr. Ahmed Khan, Lead Physiotherapist"
+                  loading="lazy"
+                  decoding="async"
+                  class="team-img w-full h-full object-cover object-top"
+                />
+                <!-- Floating Experience Badge -->
+                <div
+                  class="absolute bottom-4 right-4 bg-white/95 backdrop-blur-sm rounded-xl px-3 py-1.5 shadow-md flex items-center"
+                >
+                  <span class="text-blue-600 font-extrabold mr-1">8+</span>
+                  <span class="text-gray-900 text-xs font-bold"
+                    >Years Exp.</span
+                  >
+                </div>
+              </div>
+
+              <!-- Content -->
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="team-name text-2xl font-extrabold mb-1">
+                  Dr. Ahmed Khan
+                </h3>
+                <p class="text-blue-600 font-semibold text-sm mb-4">
+                  DPT | MSPT Orthopedics
+                </p>
+
+                <ul class="space-y-2 text-sm text-gray-600 mb-6 flex-grow">
+                  <li class="flex items-start">
+                    <svg
+                      class="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    Certified Manual Therapist
+                  </li>
+                  <li class="flex items-start">
+                    <svg
+                      class="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    Spinal Rehab Specialist
+                  </li>
+                  <li class="flex items-start">
+                    <svg
+                      class="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    Dry Needling Practitioner
+                  </li>
+                </ul>
+
+                <!-- Booking Link (Pass specific doctor if using a booking system later) -->
+                <a
+                  href="index.html#book-appointment"
+                  class="btn-outline w-full inline-flex justify-center items-center px-4 py-2.5 rounded-lg font-semibold transition-colors mt-auto border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
+                >
+                  Consult Dr. Ahmed
+                </a>
+              </div>
+            </article>
+
+            <!-- ==========================================
+           TEAM MEMBER CARD 2
+           ========================================== -->
+            <article
+              class="team-card flex flex-col bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group"
+              style="transition-delay: 100ms"
+            >
+              <div
+                class="relative w-full aspect-[4/5] bg-gray-100 overflow-hidden"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1594824432258-009142f1cf57?q=80&w=600&auto=format&fit=crop"
+                  alt="Dr. Sarah Ali, Sports Rehabilitation"
+                  loading="lazy"
+                  decoding="async"
+                  class="team-img w-full h-full object-cover object-top"
+                />
+                <div
+                  class="absolute bottom-4 right-4 bg-white/95 backdrop-blur-sm rounded-xl px-3 py-1.5 shadow-md flex items-center"
+                >
+                  <span class="text-blue-600 font-extrabold mr-1">5+</span>
+                  <span class="text-gray-900 text-xs font-bold"
+                    >Years Exp.</span
+                  >
+                </div>
+              </div>
+
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="team-name text-2xl font-extrabold mb-1">
+                  Dr. Sarah Ali
+                </h3>
+                <p class="text-blue-600 font-semibold text-sm mb-4">
+                  DPT | Sports Rehabilitation
+                </p>
+
+                <ul class="space-y-2 text-sm text-gray-600 mb-6 flex-grow">
+                  <li class="flex items-start">
+                    <svg
+                      class="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    Athletic Injury Recovery
+                  </li>
+                  <li class="flex items-start">
+                    <svg
+                      class="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    Kinesio Taping Expert
+                  </li>
+                  <li class="flex items-start">
+                    <svg
+                      class="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    Post-Surgery Rehab
+                  </li>
+                </ul>
+
+                <a
+                  href="index.html#book-appointment"
+                  class="btn-outline w-full inline-flex justify-center items-center px-4 py-2.5 rounded-lg font-semibold transition-colors mt-auto border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
+                >
+                  Consult Dr. Sarah
+                </a>
+              </div>
+            </article>
+
+            <!-- ==========================================
+           TEAM MEMBER CARD 3 (Placeholder for future)
+           ========================================== -->
+            <article
+              class="team-card flex flex-col bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group"
+              style="transition-delay: 200ms"
+            >
+              <div
+                class="relative w-full aspect-[4/5] bg-gray-100 overflow-hidden"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=600&auto=format&fit=crop"
+                  alt="Dr. Zain Raza, Neurological Therapy"
+                  loading="lazy"
+                  decoding="async"
+                  class="team-img w-full h-full object-cover object-top"
+                />
+                <div
+                  class="absolute bottom-4 right-4 bg-white/95 backdrop-blur-sm rounded-xl px-3 py-1.5 shadow-md flex items-center"
+                >
+                  <span class="text-blue-600 font-extrabold mr-1">10+</span>
+                  <span class="text-gray-900 text-xs font-bold"
+                    >Years Exp.</span
+                  >
+                </div>
+              </div>
+
+              <div class="p-6 flex flex-col flex-grow">
+                <h3 class="team-name text-2xl font-extrabold mb-1">
+                  Dr. Zain Raza
+                </h3>
+                <p class="text-blue-600 font-semibold text-sm mb-4">
+                  DPT | Neuro-Physiotherapy
+                </p>
+
+                <ul class="space-y-2 text-sm text-gray-600 mb-6 flex-grow">
+                  <li class="flex items-start">
+                    <svg
+                      class="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    Stroke Rehabilitation
+                  </li>
+                  <li class="flex items-start">
+                    <svg
+                      class="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    Geriatric Care
+                  </li>
+                  <li class="flex items-start">
+                    <svg
+                      class="w-4 h-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    Balance & Gait Training
+                  </li>
+                </ul>
+
+                <a
+                  href="index.html#book-appointment"
+                  class="btn-outline w-full inline-flex justify-center items-center px-4 py-2.5 rounded-lg font-semibold transition-colors mt-auto border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
+                >
+                  Consult Dr. Zain
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- TEAM COMPONENT END -->
+
+      <!-- WHY CHOOSE US COMPONENT START -->
+      <section
+        id="clinic-features"
+        data-component="features"
+        class="py-16 lg:py-24"
+        aria-labelledby="features-heading"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Section Header -->
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <span
+              class="features-subtitle font-bold tracking-wide uppercase text-sm md:text-base mb-3 block"
+            >
+              Patient-Centered Care
+            </span>
+            <h2
+              id="features-heading"
+              class="features-title text-3xl md:text-4xl font-extrabold leading-tight mb-4"
+            >
+              Why Choose Our Clinic?
+            </h2>
+            <p class="features-description text-lg max-w-2xl mx-auto">
+              We prioritize your comfort, convenience, and recovery. Experience
+              a healthcare environment designed entirely around your needs.
+            </p>
+          </div>
+
+          <!-- Features Grid: 1 col (mobile), 2 cols (tablet), 3 cols (desktop) -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Feature 1: Modern Equipment -->
+            <article
+              class="feature-card flex flex-col p-8 rounded-3xl bg-white shadow-sm border border-gray-100 relative overflow-hidden group"
+            >
+              <div
+                class="feature-icon-wrapper w-14 h-14 rounded-2xl flex items-center justify-center mb-6 transition-transform group-hover:-translate-y-1"
+              >
+                <svg
+                  class="w-7 h-7"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+                  />
+                </svg>
+              </div>
+              <h3 class="feature-title text-xl font-bold mb-3">
+                Modern Equipment
+              </h3>
+              <p class="feature-text text-base leading-relaxed flex-grow">
+                State-of-the-art diagnostic and therapeutic modalities to
+                accelerate tissue healing and optimize your recovery timeline.
+              </p>
+            </article>
+
+            <!-- Feature 2: Individual Treatment Plans -->
+            <article
+              class="feature-card flex flex-col p-8 rounded-3xl bg-white shadow-sm border border-gray-100 relative overflow-hidden group"
+              style="transition-delay: 100ms"
+            >
+              <div
+                class="feature-icon-wrapper w-14 h-14 rounded-2xl flex items-center justify-center mb-6 transition-transform group-hover:-translate-y-1"
+              >
+                <svg
+                  class="w-7 h-7"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+                  />
+                </svg>
+              </div>
+              <h3 class="feature-title text-xl font-bold mb-3">
+                Individual Treatment Plans
+              </h3>
+              <p class="feature-text text-base leading-relaxed flex-grow">
+                No cookie-cutter routines. Every protocol is custom-designed
+                based on your unique biomechanics, lifestyle, and goals.
+              </p>
+            </article>
+
+            <!-- Feature 3: Affordable Consultation -->
+            <article
+              class="feature-card flex flex-col p-8 rounded-3xl bg-white shadow-sm border border-gray-100 relative overflow-hidden group"
+              style="transition-delay: 200ms"
+            >
+              <div
+                class="feature-icon-wrapper w-14 h-14 rounded-2xl flex items-center justify-center mb-6 transition-transform group-hover:-translate-y-1"
+              >
+                <svg
+                  class="w-7 h-7"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <h3 class="feature-title text-xl font-bold mb-3">
+                Affordable Consultation
+              </h3>
+              <p class="feature-text text-base leading-relaxed flex-grow">
+                Expert clinical care should be accessible. We offer transparent,
+                competitive pricing with absolutely no hidden fees.
+              </p>
+            </article>
+
+            <!-- Feature 4: Flexible Appointment Times -->
+            <article
+              class="feature-card flex flex-col p-8 rounded-3xl bg-white shadow-sm border border-gray-100 relative overflow-hidden group"
+              style="transition-delay: 300ms"
+            >
+              <div
+                class="feature-icon-wrapper w-14 h-14 rounded-2xl flex items-center justify-center mb-6 transition-transform group-hover:-translate-y-1"
+              >
+                <svg
+                  class="w-7 h-7"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <h3 class="feature-title text-xl font-bold mb-3">
+                Flexible Appointment Times
+              </h3>
+              <p class="feature-text text-base leading-relaxed flex-grow">
+                We work around your schedule. Offering early morning, evening,
+                and weekend slots so you never have to delay your healing.
+              </p>
+            </article>
+
+            <!-- Feature 5: Female Therapist Available -->
+            <article
+              class="feature-card flex flex-col p-8 rounded-3xl bg-white shadow-sm border border-gray-100 relative overflow-hidden group"
+              style="transition-delay: 400ms"
+            >
+              <div
+                class="feature-icon-wrapper w-14 h-14 rounded-2xl flex items-center justify-center mb-6 transition-transform group-hover:-translate-y-1"
+              >
+                <svg
+                  class="w-7 h-7"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                  />
+                </svg>
+              </div>
+              <h3 class="feature-title text-xl font-bold mb-3">
+                Female Therapist Available
+              </h3>
+              <p class="feature-text text-base leading-relaxed flex-grow">
+                Ensuring complete comfort, privacy, and cultural sensitivity for
+                our female patients with dedicated female specialists on staff.
+              </p>
+            </article>
+
+            <!-- Feature 6: Home Visits -->
+            <article
+              class="feature-card flex flex-col p-8 rounded-3xl bg-white shadow-sm border border-gray-100 relative overflow-hidden group"
+              style="transition-delay: 500ms"
+            >
+              <div
+                class="feature-icon-wrapper w-14 h-14 rounded-2xl flex items-center justify-center mb-6 transition-transform group-hover:-translate-y-1"
+              >
+                <svg
+                  class="w-7 h-7"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                  />
+                </svg>
+              </div>
+              <h3 class="feature-title text-xl font-bold mb-3">Home Visits</h3>
+              <p class="feature-text text-base leading-relaxed flex-grow">
+                Can't make it to the clinic? We bring expert physiotherapy
+                directly to your door for post-operative care and restricted
+                mobility.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- WHY CHOOSE US COMPONENT END -->
+
+      <!-- PROCESS COMPONENT START -->
+      <section
+        id="clinic-process"
+        data-component="process"
+        class="py-16 lg:py-24 relative overflow-hidden"
+        aria-labelledby="process-heading"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <!-- Section Header -->
+          <div class="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
+            <span
+              class="process-subtitle font-bold tracking-wide uppercase text-sm md:text-base mb-3 block"
+            >
+              Your Path to Healing
+            </span>
+            <h2
+              id="process-heading"
+              class="process-title text-3xl md:text-4xl font-extrabold leading-tight mb-4"
+            >
+              Our 5-Step Recovery Process
+            </h2>
+            <p class="process-description text-lg max-w-2xl mx-auto">
+              We take the guesswork out of rehabilitation. From your first
+              consultation to your final home routine, you will know exactly
+              what to expect.
+            </p>
+          </div>
+
+          <!-- Timeline Wrapper -->
+          <!-- Grid: 1 col (mobile), 3 cols (tablet - wraps), 5 cols (desktop) -->
+          <ol
+            class="relative grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-4"
+          >
+            <!-- Step 1: Book Appointment -->
+            <li
+              class="process-step relative flex flex-col items-center text-center group"
+            >
+              <!-- Connecting Line (Desktop) -->
+              <div
+                class="hidden lg:block absolute top-10 left-[60%] w-full h-[2px] bg-gray-100 z-0"
+              ></div>
+
+              <!-- Step Number / Icon -->
+              <div
+                class="process-icon-wrapper relative z-10 w-20 h-20 rounded-full flex items-center justify-center bg-white border-4 border-gray-50 shadow-sm mb-6 transition-transform group-hover:scale-110 group-hover:border-blue-100"
+              >
+                <span class="text-2xl font-extrabold text-blue-600">01</span>
+              </div>
+
+              <h3 class="process-name text-lg font-bold mb-2">
+                Book Appointment
+              </h3>
+              <p class="process-text text-sm leading-relaxed px-2">
+                Schedule your visit easily via our website or a quick WhatsApp
+                message.
+              </p>
+            </li>
+
+            <!-- Step 2: Assessment -->
+            <li
+              class="process-step relative flex flex-col items-center text-center group"
+              style="transition-delay: 100ms"
+            >
+              <!-- Connecting Line (Desktop) -->
+              <div
+                class="hidden lg:block absolute top-10 left-[60%] w-full h-[2px] bg-gray-100 z-0"
+              ></div>
+
+              <div
+                class="process-icon-wrapper relative z-10 w-20 h-20 rounded-full flex items-center justify-center bg-white border-4 border-gray-50 shadow-sm mb-6 transition-transform group-hover:scale-110 group-hover:border-blue-100"
+              >
+                <span class="text-2xl font-extrabold text-blue-600">02</span>
+              </div>
+
+              <h3 class="process-name text-lg font-bold mb-2">Assessment</h3>
+              <p class="process-text text-sm leading-relaxed px-2">
+                A thorough physical examination to identify the exact root cause
+                of your pain.
+              </p>
+            </li>
+
+            <!-- Step 3: Treatment Plan -->
+            <li
+              class="process-step relative flex flex-col items-center text-center group"
+              style="transition-delay: 200ms"
+            >
+              <!-- Connecting Line (Desktop) -->
+              <div
+                class="hidden lg:block absolute top-10 left-[60%] w-full h-[2px] bg-gray-100 z-0"
+              ></div>
+
+              <div
+                class="process-icon-wrapper relative z-10 w-20 h-20 rounded-full flex items-center justify-center bg-white border-4 border-gray-50 shadow-sm mb-6 transition-transform group-hover:scale-110 group-hover:border-blue-100"
+              >
+                <span class="text-2xl font-extrabold text-blue-600">03</span>
+              </div>
+
+              <h3 class="process-name text-lg font-bold mb-2">
+                Treatment Plan
+              </h3>
+              <p class="process-text text-sm leading-relaxed px-2">
+                A personalized protocol tailored specifically to your body's
+                unique biomechanics.
+              </p>
+            </li>
+
+            <!-- Step 4: Recovery Sessions -->
+            <li
+              class="process-step relative flex flex-col items-center text-center group"
+              style="transition-delay: 300ms"
+            >
+              <!-- Connecting Line (Desktop) -->
+              <div
+                class="hidden lg:block absolute top-10 left-[60%] w-full h-[2px] bg-gray-100 z-0"
+              ></div>
+
+              <div
+                class="process-icon-wrapper relative z-10 w-20 h-20 rounded-full flex items-center justify-center bg-white border-4 border-gray-50 shadow-sm mb-6 transition-transform group-hover:scale-110 group-hover:border-blue-100"
+              >
+                <span class="text-2xl font-extrabold text-blue-600">04</span>
+              </div>
+
+              <h3 class="process-name text-lg font-bold mb-2">
+                Recovery Sessions
+              </h3>
+              <p class="process-text text-sm leading-relaxed px-2">
+                Active, hands-on clinical therapy and supervised strengthening
+                exercises.
+              </p>
+            </li>
+
+            <!-- Step 5: Home Program -->
+            <li
+              class="process-step relative flex flex-col items-center text-center group"
+              style="transition-delay: 400ms"
+            >
+              <!-- No connecting line on the last item -->
+
+              <div
+                class="process-icon-wrapper relative z-10 w-20 h-20 rounded-full flex items-center justify-center bg-white border-4 border-gray-50 shadow-sm mb-6 transition-transform group-hover:scale-110 group-hover:border-blue-100"
+              >
+                <span class="text-2xl font-extrabold text-blue-600">05</span>
+              </div>
+
+              <h3 class="process-name text-lg font-bold mb-2">Home Program</h3>
+              <p class="process-text text-sm leading-relaxed px-2">
+                Custom-guided routines to maintain your progress and prevent
+                future injury.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <!-- PROCESS COMPONENT END -->
+    </main>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/hero.js"></script>
+    <script src="js/trust.js"></script>
+    <script src="js/condition.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/team.js"></script>
+    <script src="js/features.js"></script>
+    <script src="js/process.js"></script>
+  </body>
+</html>

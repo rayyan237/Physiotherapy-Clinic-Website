@@ -1,0 +1,54 @@
+/* navbar.css */
+
+#clinic-navbar {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+/* Logo */
+#clinic-navbar .nav-brand { color: var(--color-primary); }
+
+/* Desktop Links */
+#clinic-navbar .nav-link { color: var(--color-text-body); }
+#clinic-navbar .nav-link:hover { color: var(--color-primary); }
+
+/* Desktop CTA */
+#clinic-navbar .nav-cta {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+#clinic-navbar .nav-cta:hover {
+  background-color: var(--color-primary-hover);
+}
+
+/* Mobile Menu Button */
+#clinic-navbar #mobile-menu-btn {
+  color: var(--color-text-heading);
+}
+#clinic-navbar #mobile-menu-btn:hover {
+  color: var(--color-primary);
+  background-color: var(--color-bg-alt);
+}
+
+/* Mobile Menu Dropdown Area */
+#clinic-navbar #mobile-menu {
+  background-color: var(--color-bg-base);
+  border-top: 1px solid var(--color-border-light);
+}
+
+/* Mobile Links */
+#clinic-navbar .mobile-link { color: var(--color-text-body); }
+#clinic-navbar .mobile-link.active {
+  color: var(--color-primary);
+  background-color: var(--color-bg-alt);
+}
+#clinic-navbar .mobile-link:hover:not(.active) {
+  color: var(--color-primary);
+  background-color: var(--color-bg-alt);
+}
+
+/* Mobile CTA */
+#clinic-navbar .mobile-cta {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}

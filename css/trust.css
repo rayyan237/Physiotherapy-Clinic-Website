@@ -1,0 +1,60 @@
+/* trust.css */
+
+#clinic-trust {
+  background-color: var(--color-bg-alt); /* Soft gray background to separate from Hero */
+  font-family: var(--font-primary);
+}
+
+/* Left Column Typography */
+#clinic-trust .trust-subtitle { color: var(--color-primary); }
+#clinic-trust .trust-title { color: var(--color-text-heading); }
+#clinic-trust .trust-highlight { color: var(--color-primary); }
+#clinic-trust .trust-description { color: var(--color-text-body); }
+
+/* Left Column Metric Badge */
+#clinic-trust .trust-metric {
+  background-color: var(--color-bg-base);
+  border-color: var(--color-border-light);
+  color: var(--color-text-heading);
+}
+#clinic-trust .metric-number { color: var(--color-primary); }
+#clinic-trust .metric-text { color: var(--color-text-muted); }
+
+/* Left Column Animation Initial State */
+#clinic-trust .trust-content {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+#clinic-trust .trust-content.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Right Column Cards */
+#clinic-trust .trust-card {
+  background-color: var(--color-bg-base);
+  border: 1px solid var(--color-border-light);
+  
+  /* Scroll Animation Initial State */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out, box-shadow 0.3s ease;
+}
+
+#clinic-trust .trust-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#clinic-trust .trust-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+  transform: translateY(-4px);
+}
+
+#clinic-trust .trust-icon-wrapper {
+  background-color: rgba(37, 99, 235, 0.08); /* Uses RGB equivalent of your brand blue */
+}
+#clinic-trust .trust-icon { color: var(--color-primary); }
+#clinic-trust .trust-card-title { color: var(--color-text-heading); }
+#clinic-trust .trust-card-text { color: var(--color-text-muted); }
