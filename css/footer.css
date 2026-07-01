@@ -1,0 +1,31 @@
+/* footer.css */
+
+#clinic-footer {
+  font-family: var(--font-primary);
+}
+
+/* Social Media Hover Effects */
+#clinic-footer .social-link {
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+#clinic-footer .social-link:hover {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Link Interactions */
+#clinic-footer .footer-link span {
+  transition: transform 0.2s ease;
+}
+
+#clinic-footer .footer-link:hover span {
+  transform: translateX(3px);
+}
+
+/* Map Interactions handled primarily by Tailwind classes, 
+   ensuring smooth transitions for grayscale and opacity */
+#clinic-footer iframe {
+  transition: filter 0.4s ease, opacity 0.4s ease;
+}
