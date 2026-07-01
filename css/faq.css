@@ -1,0 +1,41 @@
+/* faq.css */
+
+#clinic-faq {
+  background-color: var(--color-bg-base);
+  font-family: var(--font-primary);
+}
+
+/* Base Interactions */
+#clinic-faq .faq-trigger {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+#clinic-faq .faq-trigger:hover span {
+  color: var(--color-primary);
+}
+
+#clinic-faq .faq-trigger:hover .faq-icon {
+  color: var(--color-primary);
+}
+
+/* Active State Styles applied via JavaScript */
+#clinic-faq .faq-item.is-active {
+  border-color: var(--color-border-light);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+#clinic-faq .faq-item.is-active .faq-trigger span {
+  color: var(--color-primary);
+}
+
+#clinic-faq .faq-item.is-active .faq-icon {
+  transform: rotate(180deg);
+  color: var(--color-primary);
+}
+
+/* Smooth Height Animation handled by inline styles in JS, 
+   but base transition setup here */
+#clinic-faq .faq-content {
+  will-change: max-height;
+}
