@@ -1,0 +1,35 @@
+/* css/about.css */
+
+/* Base states for scroll animations */
+.reveal-on-scroll,
+.bento-cell {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.7s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+  will-change: transform, opacity, box-shadow;
+}
+
+/* Staggered delay classes (Used in the HTML) */
+.delay-100 { transition-delay: 100ms; }
+.delay-150 { transition-delay: 150ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+
+/* Trigger Class applied by JS */
+.reveal-on-scroll.is-visible,
+.bento-cell.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Bento Grid Hover Effects */
+.bento-cell:hover { transform: translateY(-4px); }
+.bento-cell.bg-blue-600:hover { box-shadow: 0 20px 25px -5px rgba(37, 99, 235, 0.3); }
+.bento-cell.bg-slate-900:hover { box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.3); }
+.bento-cell.bg-white:hover { 
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
+  border-color: #bfdbfe; /* blue-200 */
+}
+
+/* Maintain hover effect after animation completes */
+.bento-cell.is-visible:hover { transform: translateY(-4px); }

@@ -52,3 +52,8 @@
   background-color: var(--color-primary);
   color: #ffffff;
 }
+
+/* Logo Color */
+#clinic-navbar #logo {
+  color: var(--color-primary);
+}
